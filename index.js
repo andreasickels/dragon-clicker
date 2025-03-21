@@ -1,4 +1,5 @@
 const win = nw.Window.get();
+console.log(nw);
 win.window.document.querySelector('link[rel="icon"]').href = "egg.png";
 
 var coins = 0;
