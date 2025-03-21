@@ -1,0 +1,95 @@
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="author" content="Andrea Sickels">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Dragon Clicker</title>
+<link rel="stylesheet" href="../styles/style.css">
+</head>
+<body>
+<div id="name">
+<h1 id="names"></h1>
+<h1><span id="coins">0</span> coins</h1>
+<h3>coins per second: <span id="coinspersecond">0</span></h3>
+<div class="scoreContainer">
+<div class="clickerContainer">
+<img id="egg" src="../assets/eggX.png" alt="large light brown egg" height="384px" width="384px"
+onclick="addToCoins(clickPower);addToClicks(clickPower);play();">
+<audio id="audio" src="../assets/crack.mp3"></audio>
+<button id="ascBtn" onclick="ascend(); ascendAdd(); reset();" disabled="disabled">ASCEND<br><span class="tooltiptext">Availible in full game.</span><!--<span id="totalcoins">0</span>/10000 --></button>
+</div>
+</div>
+</div>
+
+<div class="sectionRight">
+<h1>Pavilion</h1>
+
+
+<table class="shopButton" onclick="buyCursor();">
+<tr>
+<td id="image"><div class="tooltip"><img src="../assets/cursor.png" alt="white computer cursor pointing"><span class="tooltiptext">"Who doesn't crack an egg with their hands?"</span>
+</div>
+</td>
+<td id="nameAndCost">
+<p>Cursor</p>
+<p><span id="cursorcost">10</span> coins</p>
+</td>
+<td id="amount"><span id="cursors">0</span></td>
+</tr>
+</table>
+
+<table class="shopButton" onclick="buyFarm();">
+<tr>
+<td id="image"><div class="tooltip"><img src="../assets/farm.png" alt="barn building on a farm">  <span class="tooltiptext">"A nice farm to raise your egg."</span>
+</div></td>
+<td id="nameAndCost">
+<p>Farm</p>
+<p><span id="farmcost">100</span> coins</p>
+</td>
+<td id="amount"><span id="farms">0</span></td>
+</tr>
+</table>
+
+<table class="shopButton" onclick="buyTower();">
+<tr>
+<td id="image"><div class="tooltip"><img src="../assets/tower.png" alt="grey stone tower">  <span class="tooltiptext">"Wizards to conjure magical spells."</span>
+</div></td>
+<td id="nameAndCost">
+<p>Tower</p>
+<p><span id="towercost">560</span> coins</p>
+</td>
+<td id="amount"><span id="towers">0</span></td>
+</tr>
+</table>
+
+<table class="shopButton" onclick="buyCastle();">
+<tr>
+<td id="image"><div class="tooltip"><img src="../assets/castle.png" alt="medieval castle with flag on top">  <span class="tooltiptext">"Someday a princess might need to be saved from a dragon."</span>
+</div></td>
+<td id="nameAndCost">
+<p>Castle</p>
+<p><span id="castlecost">1200</span> coins</p>
+</td>
+<td id="amount"><span id="castles">0</span></td>
+</tr>
+</table>
+
+<table class="shopButton" onclick="buyFairy();">
+<tr>
+<td id="image"><div class="tooltip"><img src="../assets/fairy.png" alt="magical fairy with pink hair and wings"><span class="tooltiptext">"Fairies to grant your every wish."</span>
+</div></td>
+<td id="nameAndCost">
+<p>Fairy</p>
+<p><span id="fairycost">2800</span> coins</p>
+</td>
+<td id="amount"><span id="fairies">0</span></td>
+</tr>
+</table>
+</div>
+
+
+<script src="../app/index.js"></script>
+<script src="../app/particle.js"></script>
+
+</body>
+</html>
