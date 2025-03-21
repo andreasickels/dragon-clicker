@@ -1,0 +1,235 @@
+body {
+    background-image: radial-gradient(#1b1b2d, #272740);
+    color: dimgrey;
+    text-shadow: 1px 1px gold;
+    font-family: "Times New Roman", Times, serif;
+    border: 7px solid;
+    border-style: ridge;
+    border-color: gold;
+    -webkit-user-select: none;
+    user-select: none;
+    -webkit-user-drag: none;
+    }
+    
+    h1 {
+    margin: 0;
+    padding-top: 0;
+    }
+    
+    h3 {
+    margin: 0px 0px 10px 0px;
+    padding-top: 0;
+    }
+    
+    p {
+    font-size: 16px;
+    margin-bottom: 10px;
+    padding-bottom: 10px;
+    }
+    
+    img {
+        display: block;
+        -webkit-user-select: none;
+      user-select: none;
+      -webkit-user-drag: none;
+    }
+    
+    button {
+    font-family: "Times New Roman", Times, serif;
+    width: 128px;
+    height: 64px;
+    background-color: 1b1b2d;
+    color: dimgrey;
+    text-shadow: 1px 1px gold;
+    border: 3px ridge gold;
+    margin: 50px 20px 20px 128px;
+    visibility: visible;
+    }
+    
+    button:disabled {
+    opacity: .25;
+    }
+    
+    table {
+    background-color: #1b1b2d;
+    border: 1px solid gold;
+    }
+    
+    #name {
+    float: left;
+    padding: 10;
+    width: 256px;
+    }
+    
+    .sectionLeft {
+    float: left;
+    }
+    
+    
+    .clickerContainer img {
+    position: relative;
+    transition: all .2s ease-in-out;
+    }
+    
+    .clickerContainer img:hover {transform: scale(1.05);}
+    .clickerContainer img:active {transform: scale(0.995);}
+    
+    .sectionRight {
+    text-align: center;
+    border: 3px solid gold;
+    margin: 50px;
+    width: 324px;
+    height: 522px;
+    float: right;
+    /* overflow-x: hidden;
+    overflow-y: scroll; */
+    }
+    
+    .tooltip {
+      position: relative;
+      display: inline-block;
+      border-bottom: 1px dotted black;
+    }
+    
+    .tooltip .tooltiptext {
+      visibility: hidden;
+      width: 200px;
+      height: 64px;
+      background-color: #1b1b2d;
+      color: dimgrey;
+      text-shadow: 1px 1px gold;
+      text-align: center;
+      border: 3px solid gold;
+      border-style: ridge;
+      padding: 5px 0;
+      position: absolute;
+      z-index: 1;
+      top: -10px;
+      right: 125%;
+      opacity: 0;
+      transition: opacity 0.3s;
+    }
+    
+    .upgrades {
+    width: 100%;
+    margin: 10px 0px 10px 0px;
+    }
+    
+    .upgrades #image {
+    border: 3px solid gold;
+    width: 25%;
+    }
+    
+    .upgrades img{
+    height: 64px;
+    width: 64px;
+    }
+    
+    .shopButton {
+    width: 100%;
+    padding: 10px;
+    }
+    
+    .shopButton #image {
+    border: 3px solid gold;
+    width: 25%;
+    }
+    
+    .shopButton img {
+    height: 64px;
+    width: 64px;
+    }
+    
+    .shopButton #nameAndCost p {
+    margin: 0px;
+    width: 60%;	
+    }
+    
+    .shopButton #nameAndCost p:first-of-type {
+    font-size: 24px;
+    }
+    
+    .shopButton #amount {
+    font-size: 48px;
+    color: #595959;
+    font-family: roboto;
+    }
+    
+    .shopButton:hover .tooltiptext {
+      visibility: visible;
+      opacity: 1;
+    }
+    
+    .center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    }
+    
+    #ascBtn {
+    margin-left: 10px;
+    margin-top: 50;
+    padding: 10px;
+    }
+    
+    .modal {
+      text-align: center;
+      display: none; 
+      position: fixed; 
+      z-index: 1;
+      padding-top: 100px; 
+      left: 0;
+      top: 0;
+      width: 100%;
+      height: 100%;
+      overflow: auto;
+      background-color: rgb(0,0,34); 
+      background-color: rgba(0,0,17,0.5); 
+      border: 3px ridge gold;
+    }
+    
+    .modal-content {
+      text-align: center;
+      background-color: #fefefe;
+      margin: 10px;
+      padding: 20px;
+      width: 100%;
+      height:100%;
+    }
+    
+    .close {
+      color: #aaaaaa;
+      float: right;
+      font-size: 28px;
+      font-weight: bold;
+    }
+    
+    .close:hover,
+    .close:focus {
+      color: #000;
+      text-decoration: none;
+      cursor: pointer;
+    }
+    
+    particle {
+      position: fixed;
+      left: 0;
+      top: 0;
+      border-radius: 0%;
+      pointer-events: none;
+      opacity: 0;
+    }
+    
+    ::-webkit-scrollbar {
+      width: 12px;
+    }
+    
+    ::-webkit-scrollbar-track {
+      background-color: #1b1b2d;
+      box-shadow: inset 0 0 4px 
+    }
+    
+    ::-webkit-scrollbar-thumb {
+      background-color: rgb(175,150,0);
+      border-radius: 4px;
+    }

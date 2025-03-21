@@ -1,0 +1,28 @@
+{
+  "name": "src",
+  "version": "1.0.0",
+  "main": "views/main.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "window": {
+    "title": "Dragon Clicker",
+    "icon": "assets/egg.png",
+    "toolbar": true,
+    "frame": false,
+    "width": 1000,
+    "height": 700,
+    "min_width": 900,
+    "min_height": 650,
+    "max_width": 1200,
+    "max_height": 950,
+    "position": "center"
+  },
+  "webkit": {
+    "plugin": true
+  },
+  "keywords": [],
+  "author": "Andrea Sickels",
+  "license": "ISC",
+  "description": "Click the egg to collect coins."
+}
