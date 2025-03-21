@@ -1,6 +1,6 @@
-const win = nw.Window.get();
-console.log(nw);
-win.window.document.querySelector('link[rel="icon"]').href = "egg.png";
+// const win = nw.Window.get();
+// console.log(nw);
+document.querySelector('link[rel="icon"]').href = "egg.png";
 
 var coins = 0;
 var clicks = 0;
