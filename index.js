@@ -17,19 +17,19 @@ var fairies = 0;
 
 function eggBreak1() {
 if (clicks >= 10 && ascendNum == 0){
-  document.getElementById("egg").src = "../assets/eggY.png";
+  document.getElementById("egg").src = "eggY.png";
 	}
 }
 
 function eggBreak2() {
 if (clicks >= 100 && ascendNum == 0){
-  document.getElementById("egg").src = "../assets/eggZ.png";
+  document.getElementById("egg").src = "eggZ.png";
 	}
 }
 
 function eggBreak3() {
 if (clicks >= 150 && ascendNum == 0){
-  document.getElementById("egg").src = "../assets/dragonX.png";
+  document.getElementById("egg").src = "dragonX.png";
 	}
 }
 
